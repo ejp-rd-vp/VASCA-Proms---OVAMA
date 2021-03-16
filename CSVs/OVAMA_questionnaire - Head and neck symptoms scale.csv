@@ -1,0 +1,22 @@
+Number,question,mapping1_url,mapping1_label,mapping2_url,mapping2_label,mapping3_url,mapping3_label,mapping4_url,mapping4_label
+1,Did you experience breathing problems because of the vascular malformation in the past 4 weeks?,https://hpo.jax.org/app/browse/term/HP:0002795,Abnormal respiratory system physiology,https://hpo.jax.org/app/browse/term/HP:0002597,Abnormality of the vasculature,,,,
+1.1,How much did the breathing problem bother you?,https://hpo.jax.org/app/browse/term/HP:0002795,Abnormal respiratory system physiology,http://purl.obolibrary.org/obo/NCIT_C50535,discomfort,,,,
+2,Did you experience eyesight problems because of the vascular malformation in the past 4 weeks?,https://hpo.jax.org/app/browse/term/HP:0000505,Visual impairment,https://hpo.jax.org/app/browse/term/HP:0002597,Abnormality of the vasculature,,,,
+2.1,"How much did the eyesight problem bother you?
+",https://hpo.jax.org/app/browse/term/HP:0000505,Visual impairment,http://purl.obolibrary.org/obo/NCIT_C50535,discomfort,,,,
+3,Did you experience hearing problems because of the vascular malformation in the past 4 weeks?,https://hpo.jax.org/app/browse/term/HP:0000364,Hearing abnormality,https://hpo.jax.org/app/browse/term/HP:0002597,Abnormality of the vasculature,,,,
+3.1,How much did the hearing problems bother you?,https://hpo.jax.org/app/browse/term/HP:0000364,Hearing abnormality,http://purl.obolibrary.org/obo/NCIT_C50535,discomfort,,,,
+4,Did you experience problems with swallowing because of the vascular malformation in the past 4 weeks?,https://hpo.jax.org/app/browse/term/HP:0002015,"Difficulty in swallowing
+",https://hpo.jax.org/app/browse/term/HP:0002597,Abnormality of the vasculature,,,,
+4.1,How much did the problems with swallowing bother you?,https://hpo.jax.org/app/browse/term/HP:0002015,"Difficulty in swallowing
+",http://purl.obolibrary.org/obo/NCIT_C50535,discomfort,,,,
+5,"Did you experience speech problems because of the vascular malformation
+In the past 4 weeks?",https://hpo.jax.org/app/browse/term/HP:0002167,Neurological speech impairment,https://hpo.jax.org/app/browse/term/HP:0002597,Abnormality of the vasculature,http://purl.obolibrary.org/obo/NCIT_C38025,speech,https://hpo.jax.org/app/browse/term/HP:0000118,Phenotypic abnormality
+5.1,How much did the speech problem bother you?,https://hpo.jax.org/app/browse/term/HP:0002167,Neurological speech impairment,http://purl.obolibrary.org/obo/NCIT_C50535,discomfort,http://purl.obolibrary.org/obo/NCIT_C38025,speech,https://hpo.jax.org/app/browse/term/HP:0000118,Phenotypic abnormality
+6,Did you experience problems with chewing because of the vascular malformation in the past 4 weeks?,https://hpo.jax.org/app/browse/term/HP:0005216,Impaired mastigation,https://hpo.jax.org/app/browse/term/HP:0002597,Abnormality of the vasculature,,,,
+6.1,How much did the problem with chewing bother you?,https://hpo.jax.org/app/browse/term/HP:0005216,Impaired mastigation,http://purl.obolibrary.org/obo/NCIT_C50535,discomfort,,,,
+7,Did you experience problems with taste because of the vascular malformation in the past 4 weeks?,https://hpo.jax.org/app/browse/term/HP:0000223,Abnormality of taste sensation,https://hpo.jax.org/app/browse/term/HP:0002597,Abnormality of the vasculature,,,,
+7.1,How much did the problem with taste bother you?,https://hpo.jax.org/app/browse/term/HP:0000223,Abnormality of taste sensation,http://purl.obolibrary.org/obo/NCIT_C50535,discomfort,,,,
+8,"Did you experience saliva leakage from the mouth because of the vascular malformation
+In the past 4 weeks?",https://hpo.jax.org/app/browse/term/HP:0100755,Abnormality of salivation,https://hpo.jax.org/app/browse/term/HP:0002597,Abnormality of the vasculature,,,,
+8.1,How much did the saliva leakage from the mouth problem bother you?,https://hpo.jax.org/app/browse/term/HP:0100755,Abnormality of salivation,http://purl.obolibrary.org/obo/NCIT_C50535,discomfort,,,,

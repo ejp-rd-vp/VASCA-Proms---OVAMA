@@ -1,0 +1,18 @@
+Number,question,mapping1_url,mapping1_label,mapping2_url,mapping2_label,mapping3_url,mapping3_label,mapping4_url,mapping4_label
+1,How often were you bothered by the vascular malformation in the past 4 weeks?,https://hpo.jax.org/app/browse/term/HP:0002597,Abnormality of the vasculature,http://purl.obolibrary.org/obo/NCIT_C50535,discomfort,,,,
+2,How much were you bothered by the vascular malformation in the past 4 weeks?,https://hpo.jax.org/app/browse/term/HP:0002597,Abnormality of the vasculature,http://purl.obolibrary.org/obo/NCIT_C50535,discomfort,,,,
+3,Did you experience pain because of the vascular malformation in the past 4 weeks?,https://hpo.jax.org/app/browse/term/HP:0002597,Abnormality of the vasculature,https://hpo.jax.org/app/browse/term/HP:0012531,pain,,,,
+3.1,How often did you have pain in the past 4 weeks?,https://hpo.jax.org/app/browse/term/HP:0012531,pain,,,,,,
+3.2,"If you were in pain, how severe was this on average in the past 4 weeks?",https://hpo.jax.org/app/browse/term/HP:0012531,pain,https://hpo.jax.org/app/browse/term/HP:0012824,severity,,,,
+4,Did you experience bleeding because of the vascular malformation in the past 4 weeks?,https://hpo.jax.org/app/browse/term/HP:0002597,Abnormality of the vasculature,http://purl.obolibrary.org/obo/SYMP_0000007,bleeding,,,http://purl.bioontology.org/ontology/OMIM/MTHU053652,Bleeding
+4.1,How often did you have bleeding episodes in the past 4 weeks?,http://purl.obolibrary.org/obo/SYMP_0000007,bleeding,http://purl.bioontology.org/ontology/OMIM/MTHU053652,Bleeding,,,,
+4.2,How long did these bleeding episodes last?,http://purl.obolibrary.org/obo/SYMP_0000007,bleeding,http://purl.bioontology.org/ontology/OMIM/MTHU053652,Bleeding,,,,
+5,Did you experience leakage of fluid (other than blood) from the vascular malformation in the past 4 weeks?,http://purl.obolibrary.org/obo/NCIT_C78439,Lymph Leakage,https://hpo.jax.org/app/browse/term/HP:0002597,Abnormality of the vasculature,,,,
+5.1,How often did the vascular malformation leak fluid in the past 4 weeks?,http://purl.obolibrary.org/obo/NCIT_C78439,Lymph Leakage,https://hpo.jax.org/app/browse/term/HP:0002597,Abnormality of the vasculature,,,,
+5.2,How much did the leakage of fluid bother you?,http://purl.obolibrary.org/obo/NCIT_C78439,Lymph Leakage,http://purl.obolibrary.org/obo/NCIT_C50535,discomfort,,,,
+6,"Did you experience temporary enlargement of the vascular malformation (For example: after exercise, in warm weather or in a certain pose) in the past 4 weeks?",https://hpo.jax.org/app/browse/term/HP:0002597,vascular anomaly,http://purl.obolibrary.org/obo/NCIT_C73432,enlargement,http://radlex.org/RID/RID3775,"enlargement
+",,
+6.1,How often did you experience enlargement of the vascular malformation in the past 4 weeks?,https://hpo.jax.org/app/browse/term/HP:0002597,vascular anomaly,http://purl.obolibrary.org/obo/NCIT_C73432,enlargement,http://radlex.org/RID/RID3775,"enlargement
+",,
+6.2,"If the vascular malformation enlarged, how much did this bother you?",https://hpo.jax.org/app/browse/term/HP:0002597,vascular anomaly ,http://purl.obolibrary.org/obo/NCIT_C50535,discomfort,http://purl.obolibrary.org/obo/NCIT_C73432,enlargement,http://radlex.org/RID/RID3775,"enlargement
+"

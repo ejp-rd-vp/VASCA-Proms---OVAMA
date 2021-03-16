@@ -1,0 +1,46 @@
+number,question,mapping1_url,mapping1_label,mapping2_url,mapping2_label,mapping3_url,mapping3_label,mapping4_url,mapping4_label,mapping5_url,mapping5_label
+1,How did the general problems of the vascular malformation change since the start of the treatment?,https://hpo.jax.org/app/browse/term/HP:0002597,Abnormality of the vasculature,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C171584,"Since Starting Treatment
+
+",http://purl.obolibrary.org/obo/NCIT_C25446,change,,,,
+2,How did the pain because of the vascular malformation change since the start of the treatment?,https://hpo.jax.org/app/browse/term/HP:0012531,pain,https://hpo.jax.org/app/browse/term/HP:0002597,Abnormality of the vasculature,http://purl.obolibrary.org/obo/NCIT_C25446,change,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C171584,"Since Starting Treatment
+
+",,
+3,How did the bleeding because of the vascular malformation change since the start of the treatment?,http://purl.obolibrary.org/obo/SYMP_0000007,bleeding,https://hpo.jax.org/app/browse/term/HP:0002597,Abnormality of the vasculature,http://purl.obolibrary.org/obo/NCIT_C25446,change,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C171584,"Since Starting Treatment
+
+",,
+4,How did the leakage of fluid (other than blood) from the vascular malformation change since the start of the treatment?,http://purl.obolibrary.org/obo/NCIT_C78439,Lymph Leakage,https://hpo.jax.org/app/browse/term/HP:0002597,Abnormality of the vasculature,http://purl.obolibrary.org/obo/NCIT_C25446,change,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C171584,"Since Starting Treatment
+
+",,
+5,How did the temporary enlargement of the vascular malformation change since the start of the treatment?,https://hpo.jax.org/app/browse/term/HP:0002597,vascular anomaly,http://purl.obolibrary.org/obo/NCIT_C73432,enlargement,http://purl.obolibrary.org/obo/NCIT_C25446,change,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C171584,"Since Starting Treatment
+
+",,
+6,How did the appearance of the vascular malformation change since the start of the treatment?,http://purl.obolibrary.org/obo/NCIT_C25377,appearance,https://hpo.jax.org/app/browse/term/HP:0002597,vascular anomaly,http://purl.obolibrary.org/obo/NCIT_C25446,change,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C171584,"Since Starting Treatment
+
+",,
+7,How did the visible swelling/mass of the vascular malformation change since the start of the treatment?,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C3399,swelling,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C48173,visible,http://purl.obolibrary.org/obo/NCIT_C25446,change,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C171584,"Since Starting Treatment
+
+",https://hpo.jax.org/app/browse/term/HP:0002597,vascular anomaly
+8,How did the color of the vascular malformation (difference with normal skin) change since the start of the treatment?,https://hpo.jax.org/app/browse/term/HP:0001000,Abnormality of skin pigmentation,https://hpo.jax.org/app/browse/term/HP:0002597,vascular anomaly,http://purl.obolibrary.org/obo/NCIT_C25446,change,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C171584,"Since Starting Treatment
+
+",,
+9,"How did the surface/texture of the vascular malformation, for example: irregular, rough or bumpy (difference with normal skin) change since the start of the treatment?",https://hpo.jax.org/app/browse/term/HP:0011121,Abnormality of skin morphology,https://hpo.jax.org/app/browse/term/HP:0002597,vascular anomaly,http://purl.obolibrary.org/obo/NCIT_C25446,change,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C171584,"Since Starting Treatment
+
+",,
+10,How did the alteration of facial features because of the vascular malformation change since the start of the treatment?,https://hpo.jax.org/app/browse/term/HP:0000271,Abnormality of the face,https://hpo.jax.org/app/browse/term/HP:0002597,vascular anomaly,http://purl.obolibrary.org/obo/NCIT_C25446,change,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C171584,"Since Starting Treatment
+
+",,
+11,How did the alteration of bodily features (excluding face) because of the vascular malformation change since the start of the treatment?,http://purl.obolibrary.org/obo/NCIT_C13041,Body,https://hpo.jax.org/app/browse/term/HP:0002597,vascular anomaly,http://purl.obolibrary.org/obo/NCIT_C25446,change,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C171584,"Since Starting Treatment
+
+",,
+12,"How did the depression, helplessness, unhappiness change since the start of the treatment?",https://hpo.jax.org/app/browse/term/HP:0000716,Depressivity,,,http://purl.obolibrary.org/obo/NCIT_C25446,change,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C171584,"Since Starting Treatment
+
+",,
+13,"How did the anxiety, worries, nervousness change since the start of the treatment?",https://hpo.jax.org/app/browse/term/HP:0100852,Abnormal fear/anxiety-related behavio,,,http://purl.obolibrary.org/obo/NCIT_C25446,change,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C171584,"Since Starting Treatment
+
+",,
+14,"How did the physical functioning, for example: chores around the house, walking, climbing stairs, carrying groceries change since the start of the treatment?",https://hpo.jax.org/app/browse/term/HP:0031058,Impairment of activities of daily living,,,http://purl.obolibrary.org/obo/NCIT_C25446,change,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C171584,"Since Starting Treatment
+
+",,
+15,"How did the ability to participate in social roles and activities, for example: regular leisure activities, work, activities with friends or family change since the start of the treatment?",https://hpo.jax.org/app/browse/term/HP:0000735,Impaired social interactions,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C110989,Interference with Social Activities,http://purl.obolibrary.org/obo/NCIT_C25446,change,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C171584,"Since Starting Treatment
+
+",,
