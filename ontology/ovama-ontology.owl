@@ -1,0 +1,1730 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/ovama-proms#"
+     xml:base="https://w3id.org/ovama-proms#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:cito="http://purl.org/spar/cito/"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:void="http://rdfs.org/ns/void#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:resource="http://semanticscience.org/resource/">
+    <owl:Ontology rdf:about="https://w3id.org/ovama-proms">
+        <owl:imports rdf:resource="http://semanticscience.org/ontology/sio/v1.51/sio-release.owl"/>
+        <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <rdfs:comment xml:lang="en">An ontology for the OVAMA Questionnaire</rdfs:comment>
+        <rdfs:label xml:lang="en">OVAMA PROMs</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#theme -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#theme"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+     
+    <!-- https://w3id.org/ovama-proms#prom-question -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#prom-question">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000171"/>
+        <dc:description xml:lang="en">OVAMA PROM Question</dc:description>
+        <dc:identifier>ovama:prom-question</dc:identifier>
+        <rdfs:label xml:lang="en">OVAMA PROM Question</rdfs:label>
+    </owl:Class>
+
+
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00001 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00001">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000171"/>
+        <dc:description xml:lang="en">Appearance scale</dc:description>
+        <dc:identifier>ovama:OVAMA_00001</dc:identifier>
+        <rdfs:label xml:lang="en">Appearance scale</rdfs:label>
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00002 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00002">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How large is your vascular malformation?</dc:description>
+        <dc:identifier>ovama:OVAMA_00002</dc:identifier>
+        <rdfs:label xml:lang="en">How large is your vascular malformation?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25681"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00003 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00003">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">Do you have a visible swelling or mass of the vascular malformation?</dc:description>
+        <dc:identifier>ovama:OVAMA_00003</dc:identifier>
+        <rdfs:label xml:lang="en">Do you have a visible swelling or mass of the vascular malformation?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+        <dcat:theme rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C3399"/>
+
+        <dcat:theme rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C48173"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00004 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00004">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">Is the color of the vascular malformation different from that of your normal skin?</dc:description>
+        <dc:identifier>ovama:OVAMA_00004</dc:identifier>
+        <rdfs:label xml:lang="en">Is the color of the vascular malformation different from that of your normal skin?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+        <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0001000"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00005 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00005">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">Is the surface/texture of the vascular malformation different from your normal skin? For example irregular, rough, or bumpy.</dc:description>
+        <dc:identifier>ovama:OVAMA_00005</dc:identifier>
+        <rdfs:label xml:lang="en">Is the surface/texture of the vascular malformation different from your normal skin? For example irregular, rough, or bumpy.</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+        <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0011121"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00006 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00006">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">Do you find that your face looks different or distorted because of the vascular malformation?</dc:description>
+        <dc:identifier>ovama:OVAMA_00006</dc:identifier>
+        <rdfs:label xml:lang="en">Do you find that your face looks different or distorted because of the vascular malformation?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+        <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0000271"/>
+
+        <dcat:theme rdf:resource="http://semanticscience.org/resource/SIO_000379"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00007 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00007">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">Do you find that your body (except your face) looks different or distorted because of the vascular malformation?</dc:description>
+        <dc:identifier>ovama:OVAMA_00007</dc:identifier>
+        <rdfs:label xml:lang="en">Do you find that your body (except your face) looks different or distorted because of the vascular malformation?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C13041"/>
+
+        <dcat:theme rdf:resource="http://semanticscience.org/resource/SIO_000379"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00008 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00008">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">Do other people stare at you because of your vascular malformation?</dc:description>
+        <dc:identifier>ovama:OVAMA_00008</dc:identifier>
+        <rdfs:label xml:lang="en">Do other people stare at you because of your vascular malformation?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0000735"/>
+
+        <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00009 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00009">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">Is your self-confidence reduced because of the vascular malformation?</dc:description>
+        <dc:identifier>ovama:OVAMA_00009</dc:identifier>
+        <rdfs:label xml:lang="en">Is your self-confidence reduced because of the vascular malformation?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0031469"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00010 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00010">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How satisfied are you with the appearance of the vascular malformation?</dc:description>
+        <dc:identifier>ovama:OVAMA_00010</dc:identifier>
+        <rdfs:label xml:lang="en">How satisfied are you with the appearance of the vascular malformation?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25377"/>
+
+        <dcat:theme rdf:resource="http://semanticscience.org/resource/SIO_000379"/>
+
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00001">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000028"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                                <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00002"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00003"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00004"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00005"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00006"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00007"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00008"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00009"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00010"/>
+
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000028"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                                <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00002"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00003"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00004"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00005"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00006"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00007"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00008"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00009"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00010"/>
+
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000171"/>
+    </owl:Class>
+    
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00011 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00011">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000171"/>
+        <dc:description xml:lang="en">Satisfaction with treatment and outcomes scale</dc:description>
+        <dc:identifier>ovama:OVAMA_00011</dc:identifier>
+        <rdfs:label xml:lang="en">Satisfaction with treatment and outcomes scale</rdfs:label>
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00012 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00012">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How has the size of the vascular malformation changed since the start of treatment (or the wait-and-see policy)?</dc:description>
+        <dc:identifier>ovama:OVAMA_00012</dc:identifier>
+        <rdfs:label xml:lang="en">How has the size of the vascular malformation changed since the start of treatment (or the wait-and-see policy)?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25681"/>
+
+        <dcat:theme rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25446"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00013 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00013">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How satisfied are you with the effect of the treatment (or the wait-and-see policy) on general problems because of the vascular malformation?</dc:description>
+        <dc:identifier>ovama:OVAMA_00013</dc:identifier>
+        <rdfs:label xml:lang="en">How satisfied are you with the effect of the treatment (or the wait-and-see policy) on general problems because of the vascular malformation?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C120968"/>
+
+        <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0000118"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00014 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00014">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How satisfied are you with the effect of the treatment (or the wait-and-see policy) on the pain because of the vascular malformation?</dc:description>
+        <dc:identifier>ovama:OVAMA_00014</dc:identifier>
+        <rdfs:label xml:lang="en">How satisfied are you with the effect of the treatment (or the wait-and-see policy) on the pain because of the vascular malformation?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C120968"/>
+
+        <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0012531"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00015 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00015">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How satisfied are you with the effect of the treatment (or the wait-and-see policy) on the appearance of the vascular malformation?</dc:description>
+        <dc:identifier>ovama:OVAMA_00015</dc:identifier>
+        <rdfs:label xml:lang="en">How satisfied are you with the effect of the treatment (or the wait-and-see policy) on the appearance of the vascular malformation?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C120968"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25377"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00016 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00016">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How satisfied are you with the effect of the treatment (or the wait-and-see policy) on the functioning of your body? For example walking, moving the head, or moving the arms.</dc:description>
+        <dc:identifier>ovama:OVAMA_00016</dc:identifier>
+        <rdfs:label xml:lang="en">How satisfied are you with the effect of the treatment (or the wait-and-see policy) on the functioning of your body? For example walking, moving the head, or moving the arms.</rdfs:label>
+                <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C120968"/>
+
+        <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0100022"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00017 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00017">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How much were you bothered by side-effects of the treatment?</dc:description>
+        <dc:identifier>ovama:OVAMA_00017</dc:identifier>
+        <rdfs:label xml:lang="en">How much were you bothered by side-effects of the treatment?</rdfs:label>
+                <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C91112"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00018 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00018">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">If you could choose again, would you choose the same treatment (or the same wait-and-see policy) you had? If not, why not?</dc:description>
+        <dc:identifier>ovama:OVAMA_00018</dc:identifier>
+        <rdfs:label xml:lang="en">If you could choose again, would you choose the same treatment (or the same wait-and-see policy) you had? If not, why not?</rdfs:label>
+                <dcat:theme rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C121909"/>
+
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00011">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000028"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                                <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00012"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00013"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00014"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00015"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00016"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00017"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00018"/>
+
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000028"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                                <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00012"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00013"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00014"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00015"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00016"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00017"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00018"/>
+
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000171"/>
+    </owl:Class>
+    
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00019 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00019">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000171"/>
+        <dc:description xml:lang="en">General Symptoms Scale</dc:description>
+        <dc:identifier>ovama:OVAMA_00019</dc:identifier>
+        <rdfs:label xml:lang="en">General Symptoms Scale</rdfs:label>
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00020 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00020">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How often were you bothered by the vascular malformation in the past 4 weeks?</dc:description>
+        <dc:identifier>ovama:OVAMA_00020</dc:identifier>
+        <rdfs:label xml:lang="en">How often were you bothered by the vascular malformation in the past 4 weeks?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C50535"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00021 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00021">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How much were you bothered by the vascular malformation in the past 4 weeks?</dc:description>
+        <dc:identifier>ovama:OVAMA_00021</dc:identifier>
+        <rdfs:label xml:lang="en">How much were you bothered by the vascular malformation in the past 4 weeks?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C50535"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00022 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00022">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">Did you experience pain because of the vascular malformation in the past 4 weeks?</dc:description>
+        <dc:identifier>ovama:OVAMA_00022</dc:identifier>
+        <rdfs:label xml:lang="en">Did you experience pain because of the vascular malformation in the past 4 weeks?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+        <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0012531"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00023 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00023">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How often did you have pain in the past 4 weeks?</dc:description>
+        <dc:identifier>ovama:OVAMA_00023</dc:identifier>
+        <rdfs:label xml:lang="en">How often did you have pain in the past 4 weeks?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0012531"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00024 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00024">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">If you were in pain, how severe was this on average in the past 4 weeks?</dc:description>
+        <dc:identifier>ovama:OVAMA_00024</dc:identifier>
+        <rdfs:label xml:lang="en">If you were in pain, how severe was this on average in the past 4 weeks?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0012531"/>
+
+        <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0012824"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00025 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00025">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">Did you experience bleeding because of the vascular malformation in the past 4 weeks?</dc:description>
+        <dc:identifier>ovama:OVAMA_00025</dc:identifier>
+        <rdfs:label xml:lang="en">Did you experience bleeding because of the vascular malformation in the past 4 weeks?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000007"/>
+
+        <dcat:theme rdf:resource="http://purl.bioontology.org/ontology/OMIM/MTHU053652"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00026 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00026">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How often did you have bleeding episodes in the past 4 weeks?</dc:description>
+        <dc:identifier>ovama:OVAMA_00026</dc:identifier>
+        <rdfs:label xml:lang="en">How often did you have bleeding episodes in the past 4 weeks?</rdfs:label>
+                <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000007"/>
+
+        <dcat:theme rdf:resource="http://purl.bioontology.org/ontology/OMIM/MTHU053652"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00027 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00027">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How long did these bleeding episodes last?</dc:description>
+        <dc:identifier>ovama:OVAMA_00027</dc:identifier>
+        <rdfs:label xml:lang="en">How long did these bleeding episodes last?</rdfs:label>
+                <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000007"/>
+
+        <dcat:theme rdf:resource="http://purl.bioontology.org/ontology/OMIM/MTHU053652"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00028 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00028">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">Did you experience leakage of fluid (other than blood) from the vascular malformation in the past 4 weeks?</dc:description>
+        <dc:identifier>ovama:OVAMA_00028</dc:identifier>
+        <rdfs:label xml:lang="en">Did you experience leakage of fluid (other than blood) from the vascular malformation in the past 4 weeks?</rdfs:label>
+                <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C78439"/>
+
+        <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00029 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00029">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How often did the vascular malformation leak fluid in the past 4 weeks?</dc:description>
+        <dc:identifier>ovama:OVAMA_00029</dc:identifier>
+        <rdfs:label xml:lang="en">How often did the vascular malformation leak fluid in the past 4 weeks?</rdfs:label>
+                <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C78439"/>
+
+        <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00030 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00030">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How much did the leakage of fluid bother you?</dc:description>
+        <dc:identifier>ovama:OVAMA_00030</dc:identifier>
+        <rdfs:label xml:lang="en">How much did the leakage of fluid bother you?</rdfs:label>
+                <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C78439"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C50535"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00031 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00031">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">Did you experience temporary enlargement of the vascular malformation (For example: after exercise, in warm weather or in a certain pose) in the past 4 weeks?</dc:description>
+        <dc:identifier>ovama:OVAMA_00031</dc:identifier>
+        <rdfs:label xml:lang="en">Did you experience temporary enlargement of the vascular malformation (For example: after exercise, in warm weather or in a certain pose) in the past 4 weeks?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C73432"/>
+
+        <dcat:theme rdf:resource="http://radlex.org/RID/RID3775"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00032 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00032">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How often did you experience enlargement of the vascular malformation in the past 4 weeks?</dc:description>
+        <dc:identifier>ovama:OVAMA_00032</dc:identifier>
+        <rdfs:label xml:lang="en">How often did you experience enlargement of the vascular malformation in the past 4 weeks?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C73432"/>
+
+        <dcat:theme rdf:resource="http://radlex.org/RID/RID3775"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00033 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00033">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">If the vascular malformation enlarged, how much did this bother you?</dc:description>
+        <dc:identifier>ovama:OVAMA_00033</dc:identifier>
+        <rdfs:label xml:lang="en">If the vascular malformation enlarged, how much did this bother you?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C50535"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C73432"/>
+
+        <dcat:theme rdf:resource="http://radlex.org/RID/RID3775"/>
+
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00019">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000028"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                                <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00020"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00021"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00022"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00023"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00024"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00025"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00026"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00027"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00028"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00029"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00030"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00031"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00032"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00033"/>
+
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000028"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                                <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00020"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00021"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00022"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00023"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00024"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00025"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00026"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00027"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00028"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00029"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00030"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00031"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00032"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00033"/>
+
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000171"/>
+    </owl:Class>
+    
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00034 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00034">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000171"/>
+        <dc:description xml:lang="en">Change in vascular malformation problems</dc:description>
+        <dc:identifier>ovama:OVAMA_00034</dc:identifier>
+        <rdfs:label xml:lang="en">Change in vascular malformation problems</rdfs:label>
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00035 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00035">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How did the general problems of the vascular malformation change since the start of the treatment?</dc:description>
+        <dc:identifier>ovama:OVAMA_00035</dc:identifier>
+        <rdfs:label xml:lang="en">How did the general problems of the vascular malformation change since the start of the treatment?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+        <dcat:theme rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C171584"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25446"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00036 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00036">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How did the pain because of the vascular malformation change since the start of the treatment?</dc:description>
+        <dc:identifier>ovama:OVAMA_00036</dc:identifier>
+        <rdfs:label xml:lang="en">How did the pain because of the vascular malformation change since the start of the treatment?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0012531"/>
+
+        <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25446"/>
+
+        <dcat:theme rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C171584"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00037 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00037">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How did the bleeding because of the vascular malformation change since the start of the treatment?</dc:description>
+        <dc:identifier>ovama:OVAMA_00037</dc:identifier>
+        <rdfs:label xml:lang="en">How did the bleeding because of the vascular malformation change since the start of the treatment?</rdfs:label>
+                <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000007"/>
+
+        <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25446"/>
+
+        <dcat:theme rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C171584"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00038 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00038">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How did the leakage of fluid (other than blood) from the vascular malformation change since the start of the treatment?</dc:description>
+        <dc:identifier>ovama:OVAMA_00038</dc:identifier>
+        <rdfs:label xml:lang="en">How did the leakage of fluid (other than blood) from the vascular malformation change since the start of the treatment?</rdfs:label>
+                <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C78439"/>
+
+        <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25446"/>
+
+        <dcat:theme rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C171584"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00039 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00039">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How did the temporary enlargement of the vascular malformation change since the start of the treatment?</dc:description>
+        <dc:identifier>ovama:OVAMA_00039</dc:identifier>
+        <rdfs:label xml:lang="en">How did the temporary enlargement of the vascular malformation change since the start of the treatment?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C73432"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25446"/>
+
+        <dcat:theme rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C171584"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00040 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00040">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How did the appearance of the vascular malformation change since the start of the treatment?</dc:description>
+        <dc:identifier>ovama:OVAMA_00040</dc:identifier>
+        <rdfs:label xml:lang="en">How did the appearance of the vascular malformation change since the start of the treatment?</rdfs:label>
+                <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25377"/>
+
+        <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25446"/>
+
+        <dcat:theme rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C171584"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00041 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00041">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How did the visible swelling/mass of the vascular malformation change since the start of the treatment?</dc:description>
+        <dc:identifier>ovama:OVAMA_00041</dc:identifier>
+        <rdfs:label xml:lang="en">How did the visible swelling/mass of the vascular malformation change since the start of the treatment?</rdfs:label>
+                <dcat:theme rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C3399"/>
+
+        <dcat:theme rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C48173"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25446"/>
+
+        <dcat:theme rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C171584"/>
+
+        <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00042 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00042">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How did the color of the vascular malformation (difference with normal skin) change since the start of the treatment?</dc:description>
+        <dc:identifier>ovama:OVAMA_00042</dc:identifier>
+        <rdfs:label xml:lang="en">How did the color of the vascular malformation (difference with normal skin) change since the start of the treatment?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0001000"/>
+
+        <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25446"/>
+
+        <dcat:theme rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C171584"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00043 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00043">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How did the surface/texture of the vascular malformation, for example: irregular, rough or bumpy (difference with normal skin) change since the start of the treatment?</dc:description>
+        <dc:identifier>ovama:OVAMA_00043</dc:identifier>
+        <rdfs:label xml:lang="en">How did the surface/texture of the vascular malformation, for example: irregular, rough or bumpy (difference with normal skin) change since the start of the treatment?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0011121"/>
+
+        <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25446"/>
+
+        <dcat:theme rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C171584"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00044 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00044">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How did the alteration of facial features because of the vascular malformation change since the start of the treatment?</dc:description>
+        <dc:identifier>ovama:OVAMA_00044</dc:identifier>
+        <rdfs:label xml:lang="en">How did the alteration of facial features because of the vascular malformation change since the start of the treatment?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0000271"/>
+
+        <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25446"/>
+
+        <dcat:theme rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C171584"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00045 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00045">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How did the alteration of bodily features (excluding face) because of the vascular malformation change since the start of the treatment?</dc:description>
+        <dc:identifier>ovama:OVAMA_00045</dc:identifier>
+        <rdfs:label xml:lang="en">How did the alteration of bodily features (excluding face) because of the vascular malformation change since the start of the treatment?</rdfs:label>
+                <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C13041"/>
+
+        <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25446"/>
+
+        <dcat:theme rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C171584"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00046 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00046">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How did the depression, helplessness, unhappiness change since the start of the treatment?</dc:description>
+        <dc:identifier>ovama:OVAMA_00046</dc:identifier>
+        <rdfs:label xml:lang="en">How did the depression, helplessness, unhappiness change since the start of the treatment?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0000716"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25446"/>
+
+        <dcat:theme rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C171584"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00047 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00047">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How did the anxiety, worries, nervousness change since the start of the treatment?</dc:description>
+        <dc:identifier>ovama:OVAMA_00047</dc:identifier>
+        <rdfs:label xml:lang="en">How did the anxiety, worries, nervousness change since the start of the treatment?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0100852"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25446"/>
+
+        <dcat:theme rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C171584"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00048 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00048">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How did the physical functioning, for example: chores around the house, walking, climbing stairs, carrying groceries change since the start of the treatment?</dc:description>
+        <dc:identifier>ovama:OVAMA_00048</dc:identifier>
+        <rdfs:label xml:lang="en">How did the physical functioning, for example: chores around the house, walking, climbing stairs, carrying groceries change since the start of the treatment?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0031058"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25446"/>
+
+        <dcat:theme rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C171584"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00049 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00049">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How did the ability to participate in social roles and activities, for example: regular leisure activities, work, activities with friends or family change since the start of the treatment?</dc:description>
+        <dc:identifier>ovama:OVAMA_00049</dc:identifier>
+        <rdfs:label xml:lang="en">How did the ability to participate in social roles and activities, for example: regular leisure activities, work, activities with friends or family change since the start of the treatment?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0000735"/>
+
+        <dcat:theme rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C110989"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25446"/>
+
+        <dcat:theme rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C171584"/>
+
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00034">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000028"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                                <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00035"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00036"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00037"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00038"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00039"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00040"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00041"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00042"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00043"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00044"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00045"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00046"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00047"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00048"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00049"/>
+
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000028"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                                <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00035"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00036"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00037"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00038"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00039"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00040"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00041"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00042"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00043"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00044"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00045"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00046"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00047"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00048"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00049"/>
+
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000171"/>
+    </owl:Class>
+    
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00050 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00050">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000171"/>
+        <dc:description xml:lang="en">Head and neck symptoms scale</dc:description>
+        <dc:identifier>ovama:OVAMA_00050</dc:identifier>
+        <rdfs:label xml:lang="en">Head and neck symptoms scale</rdfs:label>
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00051 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00051">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">Did you experience breathing problems because of the vascular malformation in the past 4 weeks?</dc:description>
+        <dc:identifier>ovama:OVAMA_00051</dc:identifier>
+        <rdfs:label xml:lang="en">Did you experience breathing problems because of the vascular malformation in the past 4 weeks?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002795"/>
+
+        <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00052 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00052">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How much did the breathing problem bother you?</dc:description>
+        <dc:identifier>ovama:OVAMA_00052</dc:identifier>
+        <rdfs:label xml:lang="en">How much did the breathing problem bother you?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002795"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C50535"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00053 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00053">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">Did you experience eyesight problems because of the vascular malformation in the past 4 weeks?</dc:description>
+        <dc:identifier>ovama:OVAMA_00053</dc:identifier>
+        <rdfs:label xml:lang="en">Did you experience eyesight problems because of the vascular malformation in the past 4 weeks?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0000505"/>
+
+        <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00054 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00054">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How much did the eyesight problem bother you?
+</dc:description>
+        <dc:identifier>ovama:OVAMA_00054</dc:identifier>
+        <rdfs:label xml:lang="en">How much did the eyesight problem bother you?
+</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0000505"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C50535"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00055 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00055">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">Did you experience hearing problems because of the vascular malformation in the past 4 weeks?</dc:description>
+        <dc:identifier>ovama:OVAMA_00055</dc:identifier>
+        <rdfs:label xml:lang="en">Did you experience hearing problems because of the vascular malformation in the past 4 weeks?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0000364"/>
+
+        <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00056 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00056">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How much did the hearing problems bother you?</dc:description>
+        <dc:identifier>ovama:OVAMA_00056</dc:identifier>
+        <rdfs:label xml:lang="en">How much did the hearing problems bother you?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0000364"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C50535"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00057 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00057">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">Did you experience problems with swallowing because of the vascular malformation in the past 4 weeks?</dc:description>
+        <dc:identifier>ovama:OVAMA_00057</dc:identifier>
+        <rdfs:label xml:lang="en">Did you experience problems with swallowing because of the vascular malformation in the past 4 weeks?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002015"/>
+
+        <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00058 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00058">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How much did the problems with swallowing bother you?</dc:description>
+        <dc:identifier>ovama:OVAMA_00058</dc:identifier>
+        <rdfs:label xml:lang="en">How much did the problems with swallowing bother you?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002015"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C50535"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00059 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00059">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">Did you experience speech problems because of the vascular malformation
+In the past 4 weeks?</dc:description>
+        <dc:identifier>ovama:OVAMA_00059</dc:identifier>
+        <rdfs:label xml:lang="en">Did you experience speech problems because of the vascular malformation
+In the past 4 weeks?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002167"/>
+
+        <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38025"/>
+
+        <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0000118"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00060 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00060">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How much did the speech problem bother you?</dc:description>
+        <dc:identifier>ovama:OVAMA_00060</dc:identifier>
+        <rdfs:label xml:lang="en">How much did the speech problem bother you?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002167"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C50535"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38025"/>
+
+        <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0000118"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00061 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00061">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">Did you experience problems with chewing because of the vascular malformation in the past 4 weeks?</dc:description>
+        <dc:identifier>ovama:OVAMA_00061</dc:identifier>
+        <rdfs:label xml:lang="en">Did you experience problems with chewing because of the vascular malformation in the past 4 weeks?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0005216"/>
+
+        <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00062 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00062">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How much did the problem with chewing bother you?</dc:description>
+        <dc:identifier>ovama:OVAMA_00062</dc:identifier>
+        <rdfs:label xml:lang="en">How much did the problem with chewing bother you?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0005216"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C50535"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00063 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00063">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">Did you experience problems with taste because of the vascular malformation in the past 4 weeks?</dc:description>
+        <dc:identifier>ovama:OVAMA_00063</dc:identifier>
+        <rdfs:label xml:lang="en">Did you experience problems with taste because of the vascular malformation in the past 4 weeks?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0000223"/>
+
+        <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00064 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00064">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How much did the problem with taste bother you?</dc:description>
+        <dc:identifier>ovama:OVAMA_00064</dc:identifier>
+        <rdfs:label xml:lang="en">How much did the problem with taste bother you?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0000223"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C50535"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00065 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00065">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">Did you experience saliva leakage from the mouth because of the vascular malformation
+In the past 4 weeks?</dc:description>
+        <dc:identifier>ovama:OVAMA_00065</dc:identifier>
+        <rdfs:label xml:lang="en">Did you experience saliva leakage from the mouth because of the vascular malformation
+In the past 4 weeks?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0100755"/>
+
+        <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0002597"/>
+
+    </owl:Class>
+
+
+    <!-- https://w3id.org/ovama-proms#OVAMA_00066 -->
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00066">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ovama-proms#prom-question"/>
+        <dc:description xml:lang="en">How much did the saliva leakage from the mouth problem bother you?</dc:description>
+        <dc:identifier>ovama:OVAMA_00066</dc:identifier>
+        <rdfs:label xml:lang="en">How much did the saliva leakage from the mouth problem bother you?</rdfs:label>
+                <dcat:theme rdf:resource="https://hpo.jax.org/app/browse/term/HP:0100755"/>
+
+        <dcat:theme rdf:resource="http://purl.obolibrary.org/obo/NCIT_C50535"/>
+
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://w3id.org/ovama-proms#OVAMA_00050">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000028"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                                <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00051"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00052"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00053"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00054"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00055"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00056"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00057"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00058"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00059"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00060"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00061"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00062"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00063"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00064"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00065"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00066"/>
+
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000028"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                                <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00051"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00052"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00053"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00054"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00055"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00056"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00057"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00058"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00059"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00060"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00061"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00062"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00063"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00064"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00065"/>
+
+        <rdf:Description rdf:about="https://w3id.org/ovama-proms#OVAMA_00066"/>
+
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000171"/>
+    </owl:Class>
+    
+
+    <owl:NamedIndividual rdf:about="https://hpo.jax.org/app/browse/term/HP:0002597">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>Abnormality of the vasculature</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/NCIT_C25681">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>size</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C3399">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>swelling</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C48173">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>visible</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="https://hpo.jax.org/app/browse/term/HP:0001000">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>Abnormality of skin pigmentation</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="https://hpo.jax.org/app/browse/term/HP:0011121">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>Abnormality of skin morphology</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="https://hpo.jax.org/app/browse/term/HP:0000271">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>Abnormality of the face</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="http://semanticscience.org/resource/SIO_000379">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>perception</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/NCIT_C13041">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>Body</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="https://hpo.jax.org/app/browse/term/HP:0000735">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>Impaired social interactions</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="https://hpo.jax.org/app/browse/term/HP:0031469">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>Low self esteem</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/NCIT_C25377">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>appearance</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25446">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>change</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/NCIT_C120968">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>Overall Satisfaction with Results of Treatment</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="https://hpo.jax.org/app/browse/term/HP:0000118">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>Phenotypic abnormality</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="https://hpo.jax.org/app/browse/term/HP:0012531">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>pain</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="https://hpo.jax.org/app/browse/term/HP:0100022">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>Abnormality of movement</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/NCIT_C91112">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>Bothered By Side Effects of Treatment</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C121909">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>Would Choose Treatment Again</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/NCIT_C50535">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>discomfort</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="https://hpo.jax.org/app/browse/term/HP:0012824">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>severity</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SYMP_0000007">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>bleeding</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="http://purl.bioontology.org/ontology/OMIM/MTHU053652">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>Bleeding</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/NCIT_C78439">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>Lymph Leakage</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/NCIT_C73432">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>enlargement</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="http://radlex.org/RID/RID3775">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>enlargement
+</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C171584">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>Since Starting Treatment
+
+</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/NCIT_C25446">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>change</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="https://hpo.jax.org/app/browse/term/HP:0000716">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>Depressivity</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="https://hpo.jax.org/app/browse/term/HP:0100852">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>Abnormal fear/anxiety-related behavio</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="https://hpo.jax.org/app/browse/term/HP:0031058">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>Impairment of activities of daily living</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C110989">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>Interference with Social Activities</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="https://hpo.jax.org/app/browse/term/HP:0002795">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>Abnormal respiratory system physiology</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="https://hpo.jax.org/app/browse/term/HP:0000505">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>Visual impairment</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="https://hpo.jax.org/app/browse/term/HP:0000364">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>Hearing abnormality</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="https://hpo.jax.org/app/browse/term/HP:0002015">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>Difficulty in swallowing
+</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="https://hpo.jax.org/app/browse/term/HP:0002167">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>Neurological speech impairment</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/NCIT_C38025">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>speech</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="https://hpo.jax.org/app/browse/term/HP:0005216">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>Impaired mastigation</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="https://hpo.jax.org/app/browse/term/HP:0000223">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>Abnormality of taste sensation</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <owl:NamedIndividual rdf:about="https://hpo.jax.org/app/browse/term/HP:0100755">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel>Abnormality of salivation</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+</rdf:RDF>
